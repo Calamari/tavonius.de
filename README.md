@@ -7,5 +7,5 @@ Watch it at [Tavonius.de](http://www.tavonius.de).
 ```bash
 # change stuff
 git push
-rsync -v -zar -p --exclude=.git  . calamari@h2060497.stratoserver.net:/var/www/tavonius
+rsync -v -zar -p --exclude=.git  . deploy@tavonius.de:/var/www/tavonius
 ```
