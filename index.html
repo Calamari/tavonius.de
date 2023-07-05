@@ -80,6 +80,7 @@
         /* So it won't be cutoff while rotating */
         padding: 2px;
       }
+      a.exercism-icon,
       .profiles .fa {
         display: block;
         animation-name: bounceOut;
@@ -88,15 +89,22 @@
         animation-fill-mode: forwards;
         transition: all 450ms;
       }
+      a.exercism-icon:hover,
       a.fa:hover {
         animation-name: bounceIn;
       }
       a.fa > .svg {
         transform: scale(3);
       }
+      a.exercism-icon {
+        margin-right: 0.75rem;
+      }
       .profiles a > span {
         position: absolute;
         left: -159em;
+      }
+      a.fa-linkedin:hover {
+        color: #0a66c2;
       }
       a.fa-xing:hover {
         color: #006567;
@@ -149,13 +157,30 @@
           transform: rotate(0);
         }
       }
+      a.link {
+        color: #333;
+        opacity: 1;
+        transition: opacity 175ms ease-in-out;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a.link:hover {
+        opacity: 0.5;
+      }
+      a.link::before {
+        content: "→ ";
+      }
+      li a.link {
+        margin-left: 0.5rem;
+      }
     </style>
   </head>
   <body>
     <h1>Georg Tavonius</h1>
     <p class="about">
-      <em>Freiberuflicher Software-Entwickler</em> mit dem Schwerpunkt Web.<br />Tanztrainer
-      mit den Schwerpunkt <em>Zouk</em>.
+      <em>Freiberuflicher Software-Entwickler</em> mit dem Schwerpunkt Web.<br />
+      Co-Gründer von <a class="link" href="https://nioomi.com">Nioomi</a>.<br />
+      Tanztrainer mit den Schwerpunkt <em>Zouk</em>.
     </p>
     <div class="profiles">
       <h4>Profile im Web:</h4>
@@ -167,6 +192,21 @@
             title="Calamari @ GitHub"
             ><span>Calamari @ GitHub</span></a
           >
+        </li>
+        <li>
+          <a
+            href="https://exercism.org/profiles/Calamari"
+            class="exercism-icon"
+            title="Calamari @ exercism">
+            <img src="https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/logo-42e9b829cf6816496069a62608cb51e7c13624bd.svg" width="48" height="48" alt="exercism logo" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/georg-tavonius"
+            class="fa fa-linkedin"
+            title="Georg @ LinkedIn"
+            ><span>Georg @ LinkedIn</span></a
         </li>
         <li>
           <a
@@ -220,12 +260,10 @@
       <h4>Webseiten:</h4>
       <ul>
         <li>
-          <a href="http://webgeist.dev">webgeist.dev</a> – Software
-          Entwickler in Hamburg
+          Software Entwickler in Hamburg <a class="link" href="http://webgeist.dev">webgeist.dev</a>
         </li>
         <li>
-          <a href="https://dancesocially.com">dancesocially.com</a> – Lerne West
-          Coast Swing oder Zouk in Hamburg [Pausiert]
+          Lerne West Coast Swing oder Zouk in Hamburg [Pausiert] <a class="link" href="https://dancesocially.com">dancesocially.com</a>
         </li>
       </ul>
     </div>
@@ -235,30 +273,30 @@
         <!--li><a href="http://spaceinvaders.jaz-lounge.com/">Space Invaders</a> – Spiel eine Runde Space Invaders</li-->
         <!--li><a href="http://asteroids.jaz-lounge.com/">Asteroids Klon</a> – Spiel eine Runde Asteroids (Singleplayer Version)</li-->
         <li>
-          <a href="http://blog.jaz-lounge.com/bpm-counter/">BPM-Counter</a> –
           Tap die Beats deiner Musik mit Space nach und erhalte die wirklichen
           Beats pro Minute (und Taktzahlen).
+          <a class="link" href="http://blog.jaz-lounge.com/bpm-counter/">BPM-Counter</a>
         </li>
         <li>
-          <a href="https://github.com/Calamari/BehaviorTree.js"
+          JavaScript Bibliothek welche eine Arbeiten mit Behavior Trees
+          einfach macht.
+          <a class="link" href="https://github.com/Calamari/BehaviorTree.js"
             >BehaviorTree library</a
           >
-          – JavaScript Bibliothek welche eine Arbeiten mit Behavior Trees
-          einfach macht.
         </li>
         <li>
-          <a href="https://github.com/errwischt/stacktrace-parser"
+          JavaScript Bibliothek welche Stack Traces verschiedener Plattformen
+          in ein einheitliches Format bringt.
+          <a class="link" href="https://github.com/errwischt/stacktrace-parser"
             >StackTrace-Parser library</a
           >
-          – JavaScript Bibliothek welche Stack Traces verschiedener Plattformen
-          in ein einheitliches Format bringt.
         </li>
         <li>
-          <a href="https://github.com/Calamari/boost-movehub"
+          JavaScript Bibliothek welche Lego Boost Geräte über Bluetooth low
+          energy ansteuern kann.
+          <a class="link" href="https://github.com/Calamari/boost-movehub"
             >JavaScript Boost Movehub library</a
           >
-          – JavaScript Bibliothek welche Lego Boost Geräte über Bluetooth low
-          energy ansteuern kann.
         </li>
       </ul>
     </div>
