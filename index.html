@@ -14,7 +14,7 @@
     <meta property="og:profile:last_name" content="Tavonius" />
     <meta property="og:profile:username" content="Calamari" />
     <meta property="og:profile:gender" content="male" />
-    <meta property="og:url" content="http://www.tavonius.de" />
+    <meta property="og:url" content="https://www.tavonius.de" />
     <meta
       property="og:description"
       content="Freiberuflicher Software-Entwickler mit dem Schwerpunkt Web. Und Tanztrainer mit dem Schwerpunkt West Coast Swing."
@@ -80,8 +80,7 @@
         /* So it won't be cutoff while rotating */
         padding: 2px;
       }
-      .profiles .fa,
-      .google-plus-icon {
+      .profiles .fa {
         display: block;
         animation-name: bounceOut;
         animation-duration: 450ms;
@@ -89,7 +88,6 @@
         animation-fill-mode: forwards;
         transition: all 450ms;
       }
-      .google-plus-icon:hover,
       a.fa:hover {
         animation-name: bounceIn;
       }
@@ -121,41 +119,6 @@
       }
       a.fa-facebook:hover {
         color: #3b5998;
-      }
-
-      .google-plus-icon > i.fa {
-        display: inline-block;
-        padding: 2px 0;
-        position: relative;
-        margin-right: 0;
-        width: 13px;
-      }
-      .google-plus-icon > i::before {
-        display: inline-block;
-      }
-      .google-plus-icon:hover > .google-plus1 {
-        color: #4285f4;
-      }
-      .google-plus-icon:hover > .google-plus2 {
-        color: #34a863;
-      }
-      .google-plus-icon:hover > .google-plus3 {
-        color: #fbbc05;
-      }
-      .google-plus-icon:hover > .google-plus4 {
-        color: #ea4335;
-      }
-      .google-plus2::before {
-        text-indent: -13px;
-      }
-      .google-plus3::before {
-        text-indent: -26px;
-      }
-      .google-plus-icon > i.google-plus4 {
-        width: 23px;
-      }
-      .google-plus4::before {
-        text-indent: -39px;
       }
 
       @keyframes bounceIn {
